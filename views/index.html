@@ -1,0 +1,55 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div id ="main-container">
+    <h1>
+      Image searcher
+    </h1>
+      <h2>
+        Usage:
+      </h2>
+      <h4>
+        Example Input:
+      </h4>
+        <ol class="custom-counter">
+          <li>
+            <a href="https://nachito333-image-searcher.glitch.me/api/imagesearch/funny%20search?offset=3">
+              https://nachito333-image-searcher.glitch.me/api/imagesearch/funny%20search?offset=3
+            </a>
+          </li>
+          <li>
+            <a href="https://nachito333-image-searcher.glitch.me/api/latest">
+              https://nachito333-image-searcher.glitch.me/api/latest
+            </a>
+        </li>
+      </ol>
+      <p>
+        1) Returns 10 objects that match your search ,containing url, snippet, thumbnail and context.
+        You can add '?offset=n' to your query to paginate over the searches, where n is the page number.
+      </p>
+      <p>
+        2) Returns the 10 latest searches , including the date when each one was created.
+      </p>
+    </div>
+  </body>
+</html>
